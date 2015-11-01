@@ -1,6 +1,5 @@
 -- Cory Anderson
 -- 2015.10.31
--- D0
 
 library ieee; 
 use ieee.std_logic_1164.all;
@@ -25,40 +24,40 @@ begin
 	(	
 		(--yellow2 -> red1	
 				D3 and 
-			not D2 and 
-			not D1 and 
-			not D0
+			not	D2 and 
+			not	D1 and 
+			not	D0
 		)
 		or
 		(not EV and 
 		(
 			( 	
 				not	D3 and 
-				not D2 and 
-				not D1 and 
-				not D0
+				not	D2 and 
+				not	D1 and 
+				not	D0
 			)
 			or
 			( 	
-				not D3 and 
+				not	D3 and 
 				not	D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 			or
 			( 		
 					D3 and 
 					D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 			or
 			( CW and --Case for CW --> yellow 1
 				( 	
-					not D3 and 
+					not	D3 and 
 						D2 and 
-					not D1 and 
-					not D0
+					not	D1 and 
+					not	D0
 				)
 			)
 		))
@@ -69,7 +68,7 @@ begin
 					D3 and 
 					D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 			or
 			( 		
@@ -87,22 +86,22 @@ begin
 		(
 			( 	
 				not	D3 and 
-				not D2 and 
-				not D1 and 
+				not	D2 and 
+				not	D1 and 
 					D0
 			)
 			or
 			( 	
-				not D3 and 
+				not	D3 and 
 				not	D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 			or
 			( 		
 					D3 and 
 					D2 and 
-				not D1 and 
+				not	D1 and 
 					D0
 			)
 			or
@@ -110,7 +109,7 @@ begin
 					D3 and 
 					D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 		))
 		or
@@ -119,7 +118,7 @@ begin
 			( 		
 					D3 and 
 					D2 and 
-				not D1 and 
+				not	D1 and 
 					D0
 			)
 			or
@@ -127,7 +126,7 @@ begin
 					D3 and 
 					D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 			or
 			( 		
@@ -143,7 +142,7 @@ begin
 	(
 		(--yellow2 -> red1
 				D3 and 
-			not D2 and 
+			not	D2 and 
 			not	D1 and 
 			not	D0
 		)
@@ -152,7 +151,7 @@ begin
 		(
 			( 	
 				not	D3 and 
-				not D2 and 
+				not	D2 and 
 					D1 and 
 					D0
 			)
@@ -160,7 +159,7 @@ begin
 			( 		
 					D3 and 
 					D2 and 
-				not D1 and 
+				not	D1 and 
 					D0
 			)
 			or
@@ -168,7 +167,7 @@ begin
 					D3 and 
 					D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 		))
 		or
@@ -231,10 +230,10 @@ begin
 		(
 			( CW and --Case for CW --> yellow 1
 				( 	
-					not D3 and 
+					not	D3 and 
 						D2 and 
-					not D1 and 
-					not D0
+					not	D1 and 
+					not	D0
 				)
 			)
 		))
@@ -243,9 +242,9 @@ begin
 		(
 			( 		
 				not	D3 and 
-				not D2 and 
-				not D1 and 
-				not D0
+				not	D2 and 
+				not	D1 and 
+				not	D0
 			)
 			or
 			( 		
@@ -257,14 +256,14 @@ begin
 			or
 			( 	
 				not	D3 and 
-				not D2 and 
+				not	D2 and 
 					D1 and 
-				not D0
+				not	D0
 			)
 			or
 			( 	
 				not	D3 and 
-				not D2 and 
+				not	D2 and 
 					D1 and 
 					D0
 			)
@@ -272,8 +271,8 @@ begin
 			( 	
 				not	D3 and 
 					D2 and 
-				not D1 and 
-				not D0
+				not	D1 and 
+				not	D0
 			)
 			or
 			( 		
@@ -290,7 +289,7 @@ begin
 		(
 				D3 and 
 				D2 and 
-			not D1 and 
+			not	D1 and 
 				D0
 		)
 		or
@@ -298,7 +297,7 @@ begin
 				D3 and 
 				D2 and 
 				D1 and 
-			not D0
+			not	D0
 		)
 		or
 		(
@@ -316,16 +315,16 @@ begin
 			EV or
 			( 	
 					D3 and 
-				not D2 and 
-				not D1 and 
+				not	D2 and 
+				not	D1 and 
 					D0
 			)
 			or
 			( 	
 					D3 and 
-				not D2 and 
-				not D1 and 
-				not D0
+				not	D2 and 
+				not	D1 and 
+				not	D0
 			)
 		)
 	);
