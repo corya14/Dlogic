@@ -8,7 +8,7 @@ entity Logici is port(
 	EV, CW:			in	std_logic;
 	Red, Yellow:	in	std_logic;
 	D0i, D1i, D2i, D3i:	out	std_logic;
-	Redi, Yellowi: 	out	std_logic);
+	Redi, Yellowi:	out	std_logic);
 end Logici;
 
 --				( 	
