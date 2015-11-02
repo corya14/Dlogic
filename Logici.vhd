@@ -29,60 +29,65 @@ begin
 			not	D0
 		)
 		or
-		(not EV and 
 		(
-			( 	
-				not	D3 and 
-				not	D2 and 
-				not	D1 and 
-				not	D0
-			)
-			or
-			( 	
-				not	D3 and 
-				not	D2 and 
-					D1 and 
-				not	D0
-			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-				not	D0
-			)
-			or
-			( CW and --Case for CW --> yellow 1
+			not EV and 
+			(
 				( 	
 					not	D3 and 
-						D2 and 
+					not	D2 and 
 					not	D1 and 
 					not	D0
 				)
+				or
+				( 	
+					not	D3 and 
+					not	D2 and 
+						D1 and 
+					not	D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+					not	D0
+				)
+				or
+				( 
+					CW and --Case for CW --> yellow 1
+					( 	
+						not	D3 and 
+							D2 and 
+						not	D1 and 
+						not	D0
+					)
+				)
 			)
-		))
+		)
 		or
-		(EV and
 		(
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-				not	D0
+			EV and
+			(
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+					not	D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+						D0
+				)
 			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-					D0
-			)
-		))
+		)
 	);
 
 	D1i <=
 	(	
-		(not EV and 
+		(not EV and
 		(
 			( 	
 				not	D3 and 
@@ -113,29 +118,31 @@ begin
 			)
 		))
 		or
-		(EV and
 		(
-			( 		
-					D3 and 
-					D2 and 
-				not	D1 and 
-					D0
+			EV and
+			(
+				( 		
+						D3 and 
+						D2 and 
+					not	D1 and 
+						D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+					not	D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+						D0
+				)
 			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-				not	D0
-			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-					D0
-			)
-		))
+		)
 	);
 
 	D2i <=
@@ -147,53 +154,57 @@ begin
 			not	D0
 		)
 		or	
-		(not EV and 
 		(
-			( 	
-				not	D3 and 
-				not	D2 and 
-					D1 and 
-					D0
+			not EV and 
+			(
+				( 	
+					not	D3 and 
+					not	D2 and 
+						D1 and 
+						D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+					not	D1 and 
+						D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+					not	D0
+				)
 			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-				not	D1 and 
-					D0
-			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-				not	D0
-			)
-		))
+		)
 		or
-		(EV and
 		(
-			( 		
-					D3 and 
-					D2 and 
-				not	D1 and 
-					D0
+			EV and
+			(
+				( 		
+						D3 and 
+						D2 and 
+					not	D1 and 
+						D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+					not	D0
+				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+						D0
+				)
 			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-				not	D0
-			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-					D0
-			)
-		))
+		)
 	);
 
 	D3i <=
@@ -226,62 +237,62 @@ begin
 			not	D0
 		)
 		or
-		(not EV and 
 		(
-			( CW and --Case for CW --> yellow 1
+			not EV and CW and
+			(--Case for CW --> yellow 1
+				not	D3 and 
+					D2 and 
+				not	D1 and 
+				not	D0
+			)
+		)
+		or
+		(
+			EV and
+			(
+				( 		
+					not	D3 and 
+					not	D2 and 
+					not	D1 and 
+					not	D0
+				)
+				or
+				( 		
+					not	D3 and 
+					not	D2 and 
+					not	D1 and 
+						D0
+				)
+				or
+				( 	
+					not	D3 and 
+					not	D2 and 
+						D1 and 
+					not	D0
+				)
+				or
+				( 	
+					not	D3 and 
+					not	D2 and 
+						D1 and 
+						D0
+				)
+				or
 				( 	
 					not	D3 and 
 						D2 and 
 					not	D1 and 
 					not	D0
 				)
+				or
+				( 		
+						D3 and 
+						D2 and 
+						D1 and 
+						D0
+				)
 			)
-		))
-		or
-		(EV and
-		(
-			( 		
-				not	D3 and 
-				not	D2 and 
-				not	D1 and 
-				not	D0
-			)
-			or
-			( 		
-				not	D3 and 
-				not	D2 and 
-				not	D1 and 
-					D0
-			)
-			or
-			( 	
-				not	D3 and 
-				not	D2 and 
-					D1 and 
-				not	D0
-			)
-			or
-			( 	
-				not	D3 and 
-				not	D2 and 
-					D1 and 
-					D0
-			)
-			or
-			( 	
-				not	D3 and 
-					D2 and 
-				not	D1 and 
-				not	D0
-			)
-			or
-			( 		
-					D3 and 
-					D2 and 
-					D1 and 
-					D0
-			)
-		))
+		)
 	);
 
 	Redi <=
